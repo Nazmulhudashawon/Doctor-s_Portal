@@ -6,13 +6,16 @@ import bg from '../../../images/appointment-bg.png'
 import { Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { height } from '@mui/system';
 
 
 const appointmentbg={
     background:`url(${bg})`,
     backgroundBlendMode: "darken, luminosity",
     backgroundColor: "rgba(56, 48, 52, 0.75)",
-    marginTop:"150px"
+    marginTop:"150px",
+    height:'305px'
+    
 }
 
 const AppointmentBanner = () => {
@@ -20,7 +23,7 @@ const AppointmentBanner = () => {
         <Box style={appointmentbg} sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <img style={{ width:"400px", marginTop:"-110px"}} src={doctor} alt="" />
+          <img style={{ width:"400px", marginTop:"-112px"}} src={doctor} alt="" />
        
         </Grid>
         <Grid item xs={12} md={6} sx={{
@@ -31,7 +34,7 @@ const AppointmentBanner = () => {
         }}>
        <Box>
 
-       <Typography variant="h6" style={{color:"#1ac6ff", marginTop:"20px"}}>
+       <Typography variant="h6" style={{color:"rgb(20 209 204)", marginTop:"20px"}}>
         APPOINTMENT
 
         </Typography>
@@ -42,7 +45,7 @@ const AppointmentBanner = () => {
         The phrase ‘Learn More’ is increasingly used as a crutch for link labels. But the text has poor information scent and is bad for accessibility is increasingly used as
         </Typography>
         
-        <Button variant="contained" sx={{my:"20px"}}  style={{backgroundColor:"#1ac6ff"}}>Learn More</Button>
+        <Button variant="contained" sx={{my:"20px"}}  style={{backgroundColor:"rgb(20 209 204)"}}>Learn More</Button>
       
   
        </Box>
