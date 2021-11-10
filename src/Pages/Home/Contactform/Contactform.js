@@ -27,20 +27,22 @@ const Contactform = () => {
        <TextField
           sx={{ m:1,width:"40%", backgroundColor:"white", mx:'auto' }}
           id="outlined-size-small"
-          defaultValue="Email Address"
+          placeholder="Email Address"
           size="small"
           
         />
         <TextField
           sx={{ m: 1,width:"40%", backgroundColor:"white", mx:'auto' }}
           id="outlined-size-small"
-          defaultValue="Subject"
+          placeholder="Subject"
           size="small"
         />
         <TextField
            sx={{ m: 1,width:"40%", backgroundColor:"white", margin:'auto',height:"100px" }}
-        //   id="outlined-size-small"
-        //   size="small"
+          //  id="outlined-multiline-static"
+          //  label="Multiline"
+           multiline
+           rows={3}
           placeholder="your Message"
         />
 

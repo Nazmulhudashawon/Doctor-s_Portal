@@ -8,7 +8,7 @@ import StaticDatePicker from '@mui/lab/StaticDatePicker';
 
 const Calander = (props) => {
     const {date, setDate} = props;
-    console.log(props)
+    
     return (
         <LocalizationProvider dateAdapter={AdapterDateFns}>
       <StaticDatePicker
